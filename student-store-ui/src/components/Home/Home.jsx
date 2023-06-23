@@ -3,7 +3,7 @@ import "./Home.css";
 import ProductGrid from "../ProductGrid/ProductGrid";
 import Hero from "../Hero/Hero";
 
-export default function Home({ products }, {handleAddItem}) {
+export default function Home({ products, handleAddItem, shoppingCart}) {
 
   // Searching
   const [search, setSearch] = useState(" "); // State variable to hold the search query
@@ -19,7 +19,6 @@ export default function Home({ products }, {handleAddItem}) {
       )
     );
   };
-  console.log("------", filteredData);
 
   // Category select
   const [selectedCategory, setSelectedCategory] = useState('all'); // State variable to hold the selected category
@@ -68,9 +67,9 @@ export default function Home({ products }, {handleAddItem}) {
       <br></br>
 
       {filteredData ? (
-        <><ProductGrid products={filteredData} handleAddItem={handleAddItem}/></>
+        <><ProductGrid products={filteredData} handleAddItem={handleAddItem} shoppingCart={shoppingCart}/></>
       ) : (
-        <><ProductGrid products={filteredItems} handleAddItem={handleAddItem}/></>
+        <><ProductGrid products={filteredItems} handleAddItem={handleAddItem} shoppingCart={shoppingCart}/></>
       )}
 
       {/* About section */}

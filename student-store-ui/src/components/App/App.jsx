@@ -15,14 +15,23 @@ export default function App() {
   const [shoppingCart, setShoppingCart] = useState([])
 
   function handleAddItem(productId){
-
-    setShoppingCart([...shoppingCart,{itemId:productId, quantity: ++quantity}])
     let alreadyInCart = shoppingCart.some(
       (product) => product.itemId === productId
     )
-    console.log(shoppingCart)
+    if (alreadyInCart){
+      let i = shoppingCart.findIndex((product) => product.itemId === productId)
+      let updatedCart = [...shoppingCart]
+      updatedCart[i] = {
+        itemId: updatedCart[i].itemId,
+        quantity: ++updatedCart[i].quantity
+      }
+      setShoppingCart(updatedCart)
+    }
+    else {
+      setShoppingCart([...shoppingCart,{itemId:productId, quantity: 1}])
+    }
   }
-
+  console.log(shoppingCart)
   useEffect(() => {
     axios
       .get("https://codepath-store-api.herokuapp.com/store")
@@ -45,7 +54,7 @@ export default function App() {
           <main>
             <Navbar/>
             <Sidebar />
-            <Home products={products} handleAddItem={handleAddItem}/>
+            <Home products={products} handleAddItem={handleAddItem} shoppingCart={shoppingCart}/>
           </main>
         }>
         </Route>

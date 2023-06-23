@@ -3,9 +3,7 @@ import  "./ProductCard.css"
 import { Link } from 'react-router-dom'
 import ShoppingCart from '../ShoppingCart/ShoppingCart'
 
-const ProductCard = ({product}, {handleAddItem}) => {
-
-  const [count, setCount] = useState(0)
+const ProductCard = ({product, handleAddItem, shoppingCart}) => {
 
   return (
     
@@ -18,9 +16,9 @@ const ProductCard = ({product}, {handleAddItem}) => {
           </div>
         </Link>
           <div className="buttons">
-            <p>{count}</p>
-            <button onClick={handleAddItem}>+</button> 
-            <button onClick={handleAddItem}>-</button>
+            <p>{shoppingCart.quantity}</p>
+            <button onClick={() => handleAddItem(product.id)}>+</button> 
+            <button>-</button>
           </div>
       </div>
     
