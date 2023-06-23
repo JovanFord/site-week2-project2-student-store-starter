@@ -1,0 +1,16 @@
+.Product-card {
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+}
+
+.Product-card img{
+    height: 400px;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-detail {
+text-align: center; 
+}

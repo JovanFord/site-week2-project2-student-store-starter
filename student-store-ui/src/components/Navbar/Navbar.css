@@ -1,0 +1,22 @@
+.navBarBtn{
+    border: none;
+    background-color: transparent;
+    display: inline-block;
+    margin-left: 10%;
+    margin-bottom: 1%;
+    color: rgb(0, 0, 0);
+    font-size: 125%;
+}
+
+button:hover{
+    background-color: rgb(255, 255, 255);
+}
+
+
+nav {
+    background-color: gray;
+}
+
+.navBar::click{
+    scroll-behavior: auto;
+}

@@ -1,0 +1,15 @@
+.cart-table{
+    margin-top: 100px;
+    text-align: center;
+}
+
+.header-row{
+    background-color: aliceblue;
+    font-size: 125%;
+}
+
+.product-row{
+    background-color: rgb(255, 0, 242);
+    font-size: 125%;
+}
+
