@@ -31,6 +31,11 @@ export default function App() {
       setShoppingCart([...shoppingCart,{itemId:productId, quantity: 1}])
     }
   }
+
+  function handleRemoveItem(){
+    
+  }
+  
   console.log(shoppingCart)
   useEffect(() => {
     axios

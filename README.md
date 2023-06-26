@@ -32,7 +32,7 @@ Check out our [deployed Student Store](https://codepath-student-store-demo.surge
 
 ### Core Features
 
-- [ ] User can click to expand the shopping cart in the left navigation.
+- [X] User can click to expand the shopping cart in the left navigation.
 - [ ] Users can click the '+' button on a product cart to increment that product in the shopping cart.
 - [ ] Users can click the '-' button on a product cart to decrement that product in the shopping cart. If the count is zero, the product should be removed from the cart.
 - [ ] The shopping cart displays a table of products, quantities, subtotal, tax, and total.
@@ -45,4 +45,4 @@ Check out our [deployed Student Store](https://codepath-student-store-demo.surge
 - [ ] Allow users to use an input to filter orders by the email of the person who placed the order.
 - [ ] Your choice! (Replace this bullet explaining what you implemented. Example: Users can create a wish list of products they are interested in but not yet ready to purchase.)
 
-Video Link - https://www.loom.com/share/9ea63947739e4432a8be8f153a7ad5bc?sid=51061082-37df-4dde-8d2e-afd0f093b6df# CodePath-Student-Store
+Video Link - https://www.loom.com/share/fd905471af2f40c1bd2792fa13456c27?sid=c8e991ef-9d40-49f3-9d10-07414f6d373a CodePath-Student-Store

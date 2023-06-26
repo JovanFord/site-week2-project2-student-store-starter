@@ -18,7 +18,7 @@ const ProductCard = ({product, handleAddItem, shoppingCart}) => {
           <div className="buttons">
             <p>{shoppingCart.quantity}</p>
             <button onClick={() => handleAddItem(product.id)}>+</button> 
-            <button>-</button>
+            <button onClick={handleAddItem}>-</button>
           </div>
       </div>
     
